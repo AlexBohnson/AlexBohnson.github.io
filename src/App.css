@@ -1,38 +1,92 @@
+
+
 .App {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(".//Images/Wizard1Edit2.png"), url(".//Images/HorizontalBarsWaterColorSun.png"),
+  url(".//Images/HorizontalBarsWaterColorOcean.png");
+  
+  background-position: right bottom -10vh, top -20vh center, center bottom -40vh;
+  background-size: contain, contain, contain;
+  background-repeat: no-repeat, repeat-x, repeat-x;
+  position: relative;
+  font-family: 'Cormorant Garamond', serif;;
+}
+
+.Name {
+  font-size: 5vw;
+  position: fixed;
+  bottom: 55vh;
+  left: 5vw;
+}
+
+.Quote1 {
+  font-size: 2vw;
+  position: fixed;
+  bottom: 40vh;
+  left: 10vw;
+  width: fit-content;
+  white-space: nowrap;
+
+}
+
+.Quote2 {
+  overflow: auto;
+  font-size: 2vw;
+  position: fixed;
+  bottom: 25vh;
+  left: 15vw;
+}
+
+.BottomChevron {
+  position: fixed;
+  bottom: -2vh;
+  left: 50%;
+  font-size: 5vh;
+  color: rgb(123, 104, 251);
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.ProjectLinkAnchor {
+  position: fixed;
+  right: 58vh;
+  bottom: 58vh;
+  transform: rotate(.11turn);
+  font-size: 3vh;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@media screen and (max-width: 600px) {
+
+  .App {
+    background-position: right -10vw bottom -10vw, top -20vw center, center bottom -40vw;
   }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  .Name {
+    font-size: 10vw;
+    bottom: unset;
+    top: 15vh;
   }
-  to {
-    transform: rotate(360deg);
+
+  .Quote1 {
+    font-size: 6vw;
+    left: 5vw;
+    bottom: unset;
+    top: 26vh;
+  }
+
+  .Quote2 {
+    font-size: 5vw;
+    left: 5vw;
+    bottom: unset;
+    top: 34vh;
+  }
+
+  .ProjectLinkAnchor {
+    font-size: 7vw;
+    right: unset;
+    bottom: 40vh;
+    left: 5vh;
+    transform: unset;
   }
 }

@@ -1,0 +1,58 @@
+.ProjectGrid {
+    display: grid;
+    columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    align-items: center;
+    position: fixed;
+    bottom: 0vh;
+    width: 100vw;
+    height: 30vh;
+    font-size: 100px;
+}
+
+.ProjectTile {
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    border-style: groove;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-items: center;
+}
+
+.ProjectImage {
+    font-size: 4vh;
+    flex: 1 1 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    }
+
+.ProjectNameDescriptionBox {
+    flex: 1 1 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.ProjectName {
+    font-size: 4vh;
+    flex: 1 1 1;
+    text-align: center;
+}
+
+.ProjectDescription {
+    font-size: 4vh;
+    flex: 1 1 2
+}
+
+
+
+@media screen and (max-width: 600px) {
+    .ProjectGrid {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        overflow-y: scroll;
+
+    }    
+}
