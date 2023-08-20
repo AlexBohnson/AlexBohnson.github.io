@@ -17,22 +17,21 @@
     border-style: groove;
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: top;
     justify-items: center;
+    text-align: center;
 }
 
 .ProjectImage {
-    display: block;
-    flex: 1 1 1;
+    flex: 1 1 33%;
     background-size: contain;
     background-repeat: no-repeat;
-    height: 90%;
-    width: 90%;
+    background-position: center center;
     margin: 2vmin;
 }
 
 .ProjectNameDescriptionBox {
-    flex: 1 1 1;
+    flex: 1 1 50%;
     display: flex;
     flex-direction: column;
 }
@@ -41,11 +40,12 @@
     font-size: 4vmin;
     flex: 1 1 1;
     text-align: center;
+    
 }
 
 .ProjectDescription {
     flex: 1 1 2;
-    font-size: 2vmin;
+    font-size: 2.5vmin;
 }
 
 

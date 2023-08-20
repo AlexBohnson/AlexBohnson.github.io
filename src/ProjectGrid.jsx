@@ -7,21 +7,22 @@ function ProjectGrid(clickState) {
             <ProjectTile
                 Image={'/Images/Wizard1CroppedSquare.png'}
                 Name={'Portfolio (this site)'}
-                Link={'https://github.com/Dunsto/Dunsto.github.io'}
+                Link={'https://github.com/AlexBohnson/AlexBohnson.github.io'}
                 Description={`My project portfolio. Designed in Figma. Written in Javascript, HTML and CSS. Built with React.js.
                                 A work in progress.`} />
 
             <ProjectTile
                 Image={'Images/YarnifyCatSearch.JPG'}
-                Link={'https://github.com/Dunsto/Yarnify'}
-                Name={'Yarnify'} Description={`Full stack Android app. Searches, filters,
-                        and saves knitting patterns returned from Ravelry.com's RESTful API. Built in Android Studio. Written in Java.
-                        Processes returned JSON's with GSON library, stores and retrieves data using SQL queries with Android Room DB.`} />
+                Name={'Yarnify'}
+                Link={'https://github.com/AlexBohnson/Yarnify'}
+                Description={`Full stack Android app. Searches, filters,
+                        and saves knitting patterns returned from Ravelry.com's RESTful API. Built in Android Studio. Written in Java.`} />
 
             <ProjectTile 
-                Image={'Images/HorizontalBarsWaterColorOcean.png'}
-                Name={'Under Development'}
-                Description={'Description 3'} />
+                Image={'/Images/GitHubCap.JPG'}
+                Name={'GitHub'}
+                Link={'https://github.com/alexbohnson?tab=repositories'}
+                Description={'My GitHub repositories.'} />
         </div>
     );
 }
