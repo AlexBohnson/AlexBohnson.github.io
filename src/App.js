@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import './App.css';
 import './ProjectGrid.css';
 import ProjectGrid from './ProjectGrid.jsx';
@@ -11,25 +12,33 @@ function App() {
 }
 
 function Body() {
+
+  const [showProjects, setShowProjects] = useState(false);
+  let current = showProjects;
+
+  function handleShowProjects(){
+    Object.assign(current, showProjects);
+    setShowProjects(!current);
+  }
+
   return (
     <div className="Body">
       <Name />
       <Quote1 />
       <Quote2 />
-      <ProjectsLink />
-      <ProjectGrid />
+      <ProjectsLink onClick={ handleShowProjects}/>
+      <ProjectGrid clickState={current}/>
     </div>
   );
 }
 
+function ProjectsLink({onClick}) {
 
-
-function ProjectsLink() {
   return (
-    <div className="ProjectLinkAnchor">
+    <button className="ProjectLinkAnchor" onClick={onClick}>
 
       My Projects
-    </div>
+    </button>
   );
 }
 

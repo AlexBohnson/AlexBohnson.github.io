@@ -10,7 +10,9 @@
   background-size: contain, contain, contain;
   background-repeat: no-repeat, repeat-x, repeat-x;
   position: relative;
-  font-family: 'Cormorant Garamond', serif;;
+  font-family: 'B612', sans-serif;
+font-family: 'Cormorant Garamond', serif;
+font-family: 'Crimson Pro', serif;
 }
 
 .Name {

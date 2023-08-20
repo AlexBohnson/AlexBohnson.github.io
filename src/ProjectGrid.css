@@ -22,28 +22,30 @@
 }
 
 .ProjectImage {
-    font-size: 4vh;
-    flex: 1 1 0;
-    background-size: cover;
+    display: block;
+    flex: 1 1 1;
+    background-size: contain;
     background-repeat: no-repeat;
-    height: 100%;
-    }
+    height: 90%;
+    width: 90%;
+    margin: 2vmin;
+}
 
 .ProjectNameDescriptionBox {
-    flex: 1 1 0;
+    flex: 1 1 1;
     display: flex;
     flex-direction: column;
 }
 
 .ProjectName {
-    font-size: 4vh;
+    font-size: 4vmin;
     flex: 1 1 1;
     text-align: center;
 }
 
 .ProjectDescription {
-    font-size: 4vh;
-    flex: 1 1 2
+    flex: 1 1 2;
+    font-size: 2vmin;
 }
 
 
@@ -53,6 +55,9 @@
         grid-template-columns: 1fr;
         grid-template-rows: auto;
         overflow-y: scroll;
-
-    }    
+        border-top: .5vmin groove;
+    }
+    .ProjectImage {
+        display: none;
+    }
 }
